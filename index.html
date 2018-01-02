@@ -19,12 +19,35 @@
 		.one{
 			background:#adadad; 
 			width: 1920px;
-			margin:	0	auto;
 			height: 40px; 
 		}
+		.daohang{
+			margin: 0	auto;
+			height: 40px; 
+			width:820px;
+			overflow: hidden;
+			margin-left: 650px;
+		}
+		.daohang	li{
+			float: left;
+			list-style: none;
+			margin-right: 75px;
+			color:  #2d2d2d;
+		}
+		.daohang	li a{
+			color: #2d2d2d;
+			text-decoration: none;
+		}
+		.daohang	li a:hover
+		{
+			text-decoration: underline;
+			color: #ffffff;
+		}
+		.tupianzu{
+			float-left;
+		}
 		.shouye{
-			margin-left: 566px;
-			margin-top: 14px;
+			margin-top: 12px;
 		}
 		.jieshao{
 			margin-left: 125px;
@@ -37,18 +60,6 @@
 		}
 		.weibo{
 			margin-left: 125px;
-		}
-		.aixin{
-			margin-left: 125px;
-			margin-top: 5px;
-		}
-		.sousuo{
-			margin-left: 40px;
-			margin-top: 5px;		
-		}
-		.xingfeng{
-			margin-left: 40px;
-			margin-top: 5px;		
 		}
 		.two{
 			background:#ffffff; 
@@ -390,22 +401,21 @@
 <body>
 	<div class="beijing">
 		<div class="one">
-			<img src="P/shouye.png" alt="" class="shouye">
-			<img src="P/jieshao.png" alt="" class="jieshao">
-			<img src="P/zuoping.png" alt="" class="zuoping">
-			<img src="P/lianxi.png" alt="" class="lianxi">
-			<img src="P/weibo.png" alt="" class="weibo">
-			<img src="P/aixin.png" alt="" class="aixin">
-			<img src="P/sousuo.png" alt="" class="sousuo">
-			<img src="P/xingfeng.png" alt="" class="xingfeng">
+			<ul class="daohang">
+				<div class="shouye"><li><a href="#shouye">首页</a></li></div>
+				<div class="jieshao"><li><a href="#jieshao">个人介绍</a></li></div>
+				<div class="zuoping"><li><a href="#zuoping">个人作品</a></li></div>
+				<div class="lianxi"><li><a href="#lianxi">联系方式</a></li></div>
+				<div class="weibo"><li><a href="https://weibo.com" target="_blank">微博</a></li></div>
+			</ul>
 		</div>
-		<div class="two">
+		<div class="two" id="shouye">
 			<img src="P/Hi.png" alt="" class="biaoti">
 		</div>
 		<div class="three">
 			<img src="P/01.png"	alt=""	class="zhutu">	
 		</div>
-		<div class="four">
+		<div class="four" id="zuoping">
 			<div class="zuo">
 				<img src="P/the flash.png"	alt=""	class="flash">
 				<div class="huise">	
@@ -468,7 +478,7 @@
 				<img src="P/juanfaqi.png"	alt=""	class="juanfaqi">
 			</div>
 		</div>
-		<div class="eight">
+		<div class="eight" id="jieshao">
 			<img src="P/1.png" alt="" class="a">
 			<img src="P/2.png" alt="" class="b">
 			<img src="P/5.png" alt="" class="e">
@@ -487,7 +497,7 @@
 			<img src="P/youjiantou.png" alt="" class="youjiantou">	
 		</div>	
 		<div class="eleven"></div>
-		<div class="twelve">	
+		<div class="twelve" id="lianxi">	
 			<img src="P/weixin.png" alt="" class="weixin">
 			<img src="P/QQ.png" alt="" class="QQ">
 			<img src="P/phone.png" alt="" class="phone">
